@@ -1,0 +1,168 @@
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* header */
+  header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    margin-top: -130px;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  header img {
+    height: 200px;
+  }
+
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  /* header */
+
+  /* article */
+  article {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  article img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 20%;
+    margin-top: 25px;
+  }
+  
+  article p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  aside {
+    margin: 20px;
+  }
+  
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border-right: double;
+    padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* facts */
+  .facts {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+  }
+  
+  .facts h3 {
+    margin-top: 0;
+  }
+  
+  .facts ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .facts li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* form */
+  section{
+    margin: 20px;
+  }
+
+  .formsection {
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #30a302;
+    color: #333;
+  }
+
+  /* footer */
+  footer {
+    text-align: right;
+    margin: 20px;
+  }
